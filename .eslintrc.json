@@ -1,0 +1,21 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "error", // Enforces using types for object definitions (type or interface)
+    "@typescript-eslint/consistent-type-definitions": ["error", {}] // Enforces type definitions to use "type" keyword
+  },
+  "env": {
+    "browser": true,
+    "es2021": true
+  }
+}
