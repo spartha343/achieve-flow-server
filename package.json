@@ -8,7 +8,7 @@
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts",
     "lint:fix": "npm run lint --fix",
     "prettier:fix": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-    "lint:prettier":"npm run lint:fix && npm run prettier:fix",
+    "lint:prettier": "npm run lint:fix && npm run prettier:fix",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky"
   },
@@ -42,6 +42,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "http-status-codes": "^2.3.0",
     "mongodb": "^6.7.0",
     "mongoose": "^8.4.1"
   }
