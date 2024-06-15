@@ -4,7 +4,11 @@ import cors from 'cors'
 import routes from './routes/routes'
 
 // middlewares
-app.use(cors())
+app.use(
+  cors({
+    origin: 'https://achieve-flow.netlify.app/',
+  }),
+)
 app.use(express.json())
 
 // routes
